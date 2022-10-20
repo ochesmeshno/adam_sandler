@@ -1,0 +1,10 @@
+[Unit]
+Description=Telegram bot %name%
+After=syslog.target
+After=network.target
+
+[Service]
+ExecStart=/home/ubuntu/realtalk/start.sh
+
+[Install]
+WantedBy=multi-user.target
